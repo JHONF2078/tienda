@@ -75,6 +75,12 @@
                                     Products</router-link
                                 >
                             </li>
+                             <li>
+                                <router-link to="stock"
+                                    ><Icon type="ios-paper"/>
+                                    Stock</router-link
+                                >
+                            </li>
                             <li>
                                 <a href="/logout">
                                     <Icon type="ios-speedometer" /> Logout</a

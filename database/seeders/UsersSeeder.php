@@ -26,7 +26,7 @@ class UsersSeeder extends Seeder
             $user->name= 'jhonf'.$i;
             $user->email= 'jhonf'.$i.'@gmail.com';
             $user->password= bcrypt(123456);
-            $user->role_id= 1;
+            $user->role_id=  rand(1, 2);
 
             $user->save();
 

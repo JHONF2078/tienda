@@ -172,19 +172,18 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 return _context.abrupt("return", _this.error("Product name is required"));
 
               case 2:
-                console.log(_this.editData);
-                _context.next = 5;
+                _context.next = 4;
                 return _this.callApi("post", "app/edit_product_stock", _this.editData);
 
-              case 5:
+              case 4:
                 res = _context.sent;
-
-                _this.editProductStockItem(_this.editData);
 
                 if (res.status === 200) {
                   _this.products[_this.index].name = _this.editData.name;
 
                   _this.success("Product has beeen edited successfully");
+
+                  _this.editProductStockItem(_this.editData);
 
                   _this.editModal = false;
                 } else {
@@ -197,7 +196,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 }
 
-              case 8:
+              case 6:
               case "end":
                 return _context.stop();
             }
